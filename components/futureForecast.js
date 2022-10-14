@@ -26,7 +26,7 @@ const FutureForeCast = ({data}) => {
 const FutureForeCastItem = ({forecastItem}) => {
     const img = {uri: "https://openweathermap.org/img/wn" + forecastItem.weather[0].icon + "@2x.png"}
     return(
-        <View style={styles.FutureForeCastItemContainer}>
+        <View style ={styles.FutureForeCastItemContainer}>
             <Text style={styles.day}>{moment(forecastItem.dt *1000).format("ddd")}</Text>
             <Image source={img} style={styles.image}/>
             <Text style={styles.temp}>Night - {forecastItem.temp.night}&#176;C</Text>
