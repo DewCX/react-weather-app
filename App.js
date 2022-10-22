@@ -26,7 +26,7 @@ export default function App() {
 
     const fetchDataFromApi = (latitude, longitude) => {
       if(latitude && longitude){
-        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`).then(res => res.json()).then(data => {
+        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`).then(res => res.json()).then(data => {
           setData(data)
         })
       }

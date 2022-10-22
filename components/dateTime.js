@@ -32,7 +32,7 @@ const WeatherItem = ({ title, value, unit }) => {
       <Text style={styles.WeatherItemTitle}>{title}</Text>
       <Text style={styles.WeatherItemTitle}>
         {value}
-        {title}
+        {unit}
       </Text>
     </View>
   )
@@ -94,12 +94,13 @@ const styles = StyleSheet.create({
         fontSize: 45,
         color: "white",
         fontWeight: "100",
+        marginTop: 40,
     },
     subheading: {
         fontSize: 25,
         color: "#eee",
         fontWeight: "300",
-        marginTop: 50
+        marginTop: 10
     },
     rightAlign: {
         textAlign: "right",
@@ -108,7 +109,7 @@ const styles = StyleSheet.create({
     timezone: {
         fontSize: 20,
         color: "white",
-        marginTop: 80
+        marginTop: 40
     },
     latlong: {
         fontSize: 40,
